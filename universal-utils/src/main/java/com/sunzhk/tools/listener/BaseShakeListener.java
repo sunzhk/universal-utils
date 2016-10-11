@@ -8,6 +8,7 @@ import android.hardware.SensorManager;
 import android.os.Vibrator;
 
 /**
+ * 摇一摇监听器
  * 自己声明权限。<br>在生命周期的开始和结束调用regist()和unRegist()方法。
  * @author sunzhk
  *

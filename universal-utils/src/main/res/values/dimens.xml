@@ -1,0 +1,15 @@
+<resources>
+	<!-- 字体 -->
+    <dimen name="microFont">10sp</dimen>
+    <dimen name="smallFont">15sp</dimen>
+    <dimen name="middleFont">20sp</dimen>
+    <dimen name="bigFont">25sp</dimen>
+    <dimen name="largeFont">30sp</dimen>
+    <!-- 间隙 -->
+    <dimen name="microPadding">1dp</dimen>
+    <dimen name="smallPadding">2dp</dimen>
+    <dimen name="middlePadding">5dp</dimen>
+    <dimen name="bigPadding">10dp</dimen>
+    <dimen name="largePadding">20dp</dimen> 
+    
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="snow">#fffafa</color><!--雪白色 -->   
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="red">#ff5050</color>
+    <color name="blue">#6db0fb</color>
+    <color name="orange">#ff9933</color>
+    <color name="header_color">#ff6600</color>
+    <color name="footer_color">#a7c6e5</color>
+    <color name="gray">#dcdcdc</color>
+    <color name="lightgray">#f0f0f0</color>
+    <color name="lightwhite">#fffafa</color>
+    
+    <!-- activity.integral_mall -->
+    <color name="integral_mall_mjfc">#ff6600</color>
+    <color name="integral_mall_xfps">#fbdf45</color>
+    
+    <!-- acitivity_mine -->
+    <color name="mine_head_layout">#ff6600</color>
+    
+    <!-- acctivity_vcommunity -->
+    <color name="vcommunity_head_color">#99ccff</color>
+    
+    <!-- zxing -->
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+	<color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    
+</resources>

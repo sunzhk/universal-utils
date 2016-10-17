@@ -14,14 +14,25 @@ public class SystemAlarmUtils {
 	/**
 	 * 设置重复的系统闹钟
 	 * @param context 上下文;
-	 * @param intent 需要启动的intent
+	 * @param intent 需要由闹钟启动的intent
 	 * @param startTime 启动时间-使用System.currentTimeMillis()以立即启动
 	 * @param repeatTime 两次闹钟的时间间隔
 	 */
-	public static void setAlarm(Context context, Intent intent, long startTime, long repeatTime){
+	public static void setRepeatingAlarm(Context context, Intent intent, long startTime, long repeatTime){
 		PendingIntent sender = PendingIntent.getService(context, 0, intent, 0);
 		AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
 		am.setRepeating(AlarmManager.RTC_WAKEUP, startTime, repeatTime, sender);
+	}
+	/**
+	 * 设置系统闹钟
+	 * @param context 上下文;
+	 * @param intent 需要由闹钟启动的intent
+	 * @param startTime 启动时间-使用System.currentTimeMillis()以立即启动
+	 */
+	public static void setAlarm(Context context, Intent intent, long startTime){
+		PendingIntent sender = PendingIntent.getService(context, 0, intent, 0);
+		AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+		am.set(AlarmManager.RTC_WAKEUP, startTime, sender);
 	}
 	
 	/**

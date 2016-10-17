@@ -1,4 +1,6 @@
-package com.sunzhk.tools.utils;
+package com.sunzhk.tools.utils.file;
+
+import com.sunzhk.tools.utils.MultiThreadTraversal;
 
 import java.io.File;
 

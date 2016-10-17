@@ -1,38 +1,26 @@
 package com.sunzhk.tools;
 /**
- * 未经过测试
+ * 添加线程休眠与唤起方法
  * @author sunzhk
  *
  */
 public class BaseThread extends Thread {
 
-	private final String CONTORL = "";
+	private final String CONTORLER = "";
 
-	private Object contorlObject;
+
+	public synchronized void wakeUp(){
+		try {
+			CONTORLER.notifyAll();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
 	
 	public synchronized void pause(){
-		pause(CONTORL);
-	}
-	
-	public synchronized void wakeUp(){
-		if(contorlObject != null){
+		synchronized (CONTORLER) {
 			try {
-				contorlObject.notifyAll();
-			} catch (Exception e) {
-				// TODO: handle exception
-			}
-			contorlObject = null;
-		}
-	}
-	
-	public synchronized void pause(Object contorlObject){
-		if(contorlObject == null){
-			return;
-		}
-		this.contorlObject = contorlObject;
-		synchronized (contorlObject) {
-			try {
-				contorlObject.wait();
+				CONTORLER.wait();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

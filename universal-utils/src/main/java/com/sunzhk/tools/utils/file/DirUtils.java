@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 文件夹遍历处理
+ * @deprecated
  */
 public class DirUtils {
 

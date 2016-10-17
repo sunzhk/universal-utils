@@ -5,6 +5,7 @@ import android.graphics.Color;
 public class ColorUtils {
 
 	/**
+	 * 获取两种颜色之间的颜色
 	 * Gradient = A + (B-A) * N / Step
 	 * @param startColor
 	 * @param endColor

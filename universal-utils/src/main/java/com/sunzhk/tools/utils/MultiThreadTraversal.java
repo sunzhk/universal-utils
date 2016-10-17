@@ -4,7 +4,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 /**
- * 多线程简单遍历，也许用Rxjava重写一次比较好
+ * 多线程简单深度遍历，Rxjava并不支持深度遍历呀
  * @author sunzhk
  *
  */

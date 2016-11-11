@@ -1,4 +1,4 @@
-package com.sunzhk.tools.utils.http;
+package com.sunzhk.tools.http;
 
 import android.app.ProgressDialog;
 import android.content.Context;

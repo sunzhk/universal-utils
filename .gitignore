@@ -9,3 +9,6 @@
 testmodule
 /settings.gradle
 .idea
+/gradle.properties
+/gradlew
+/gradlew.bat

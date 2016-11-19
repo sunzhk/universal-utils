@@ -28,7 +28,7 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.decode.BaseImageDecoder;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 import com.sunzhk.tools.utils.SoftArrayList;
-import com.sunzhk.tools.utils.http.BaseHttpTask;
+import com.sunzhk.tools.http.BaseHttpTask;
 
 import java.io.File;
 import java.util.HashMap;

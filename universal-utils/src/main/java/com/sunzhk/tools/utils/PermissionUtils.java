@@ -69,8 +69,14 @@ public class PermissionUtils {
 		}
 	}
 
+	/**
+	 * check is permission granted
+	 * @param context context
+	 * @param permission the permission need to check
+	 * @return true if the permission is granted,or false.
+	 */
 	public static boolean checkPermission(@NonNull Context context, @NonNull String permission) {
-		return ContextCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED;
+		return ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED;
 	}
 
 	/**

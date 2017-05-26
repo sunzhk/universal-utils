@@ -1,7 +1,7 @@
 package com.sunzhk.tools.utils;
 
 /**
- * debug专用包，用于判断并抛出异常(转，但是感觉并没有什么卵用)
+ * debug专用包，用于判断并抛出异常(转，但是感觉并没有什么用)
  * @author sunzhk
  */
 public final class Debug {

@@ -1,4 +1,4 @@
-package com.sunzhk.tools.utils.file;
+package com.sunzhk.tools.file;
 
 import com.sunzhk.tools.utils.MultiThreadTraversal;
 

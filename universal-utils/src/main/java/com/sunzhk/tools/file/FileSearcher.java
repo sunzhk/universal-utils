@@ -1,4 +1,4 @@
-package com.sunzhk.tools.utils.file;
+package com.sunzhk.tools.file;
 
 import android.support.annotation.NonNull;
 import android.util.Log;

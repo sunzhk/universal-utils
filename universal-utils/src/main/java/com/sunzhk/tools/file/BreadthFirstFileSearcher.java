@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
  * Created by chances on 2017/5/23.
  */
 
-public class FileSearcher {
+public class BreadthFirstFileSearcher {
 
 	private static final String TAG = "FileSearcher";
 
@@ -31,7 +31,7 @@ public class FileSearcher {
 
 	private long startTime;
 
-	public FileSearcher(@NonNull File root, @NonNull FileFilter filter) {
+	public BreadthFirstFileSearcher(@NonNull File root, @NonNull FileFilter filter) {
 		checkNull("root file", root);
 		checkNull("filter", filter);
 		mRootFile = root;
@@ -137,16 +137,6 @@ public class FileSearcher {
 			removeThread();
 			checkSearchFinished();
 		}
-	}
-
-	public interface FileFilter{
-
-		boolean filter(File file);
-
-		void onAddMore(int currentNum);
-
-		void filterResult(ArrayList<String> files);
-
 	}
 
 }
